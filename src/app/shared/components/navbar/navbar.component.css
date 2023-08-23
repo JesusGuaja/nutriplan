@@ -7,13 +7,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: rgb(32, 32, 32);
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: rgb(0, 0, 0);
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +28,10 @@ header {
     font-size: 2em;
     color: white;
     user-select: none;
+}
+
+#logo1 {
+    width: 85px;
 }
 
 .navigation a {
@@ -63,9 +71,10 @@ header {
     font-size: 1.1em;
     color: white;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 330px;
     transition: .5s;
 }
+
 
 .navigation .btnLogin-popup:hover {
     background: white;
