@@ -6,7 +6,6 @@ const routes: Routes = [
 
   { path: "",loadChildren:()=>import('./modules/inicio/inicio.module').then(m=>m.InicioModule)},
   
-  { path: "",loadChildren:()=>import('./shared/shared.module').then(m=>m.SharedModule)}
 ];
 
 @NgModule({
