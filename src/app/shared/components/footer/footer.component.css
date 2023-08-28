@@ -1,3 +1,14 @@
+
+body {
+    display: inline-flex;
+    padding: 0px 290px 0px 289px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #77AF3C;
+}
+
 .footer,
 .footer * {
   box-sizing: border-box;
