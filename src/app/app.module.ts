@@ -30,7 +30,7 @@ import { AppRoutingModule } from './app-routing.module';
 
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
 
     AppRoutingModule
 
