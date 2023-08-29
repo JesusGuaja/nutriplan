@@ -12,6 +12,7 @@ import { environment } from 'src/environments/environment';
 import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFireAuthModule} from '@angular/fire/compat/auth';
 import {AngularFireStorageModule} from '@angular/fire/compat/storage';
+import { InicioModule } from './modules/inicio/inicio.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -27,7 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
     RouterModule,
     BrowserAnimationsModule,
     SharedModule,
-
+    InicioModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireStorageModule,
