@@ -13,7 +13,9 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
   ],
   imports: [
     CommonModule,
-    InicioRoutingModule
-  ]
+    InicioRoutingModule,
+
+  ],
+  exports:[CarruselComponent, InicioComponent]
 })
 export class InicioModule { }
