@@ -1,13 +1,16 @@
-import { Component, ViewChild } from '@angular/core';
-import { NgbCarousel, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 
+import { Component, ViewChild } from '@angular/core';
+import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
+import { NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-carrusel',
-  templateUrl: './carrusel.component.html',
-  styleUrls: ['./carrusel.component.css']
+	selector: 'ngbd-carousel-pause',
+	standalone: true,
+	imports: [NgbCarouselModule, NgFor, FormsModule],
+	templateUrl: './carousel-pause.html',
 })
-export class CarruselComponent {
+export class NgbdCarouselPause {
 	images = [62, 83, 466, 965, 982, 1043, 738].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
 	paused = false;
