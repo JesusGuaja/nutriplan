@@ -15,6 +15,10 @@ import {AngularFireStorageModule} from '@angular/fire/compat/storage';
 import { InicioModule } from './modules/inicio/inicio.module';
 
 import { AppRoutingModule } from './app-routing.module';
+import { RecetasComponent } from './pages/recetas/recetas.component';
+import { FavoritosComponent } from './pages/favoritos/favoritos.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { TerminosComponent } from './pages/terminos/terminos.component';
 
 
 
@@ -22,6 +26,10 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     ButtonComponent,
+    RecetasComponent,
+    FavoritosComponent,
+    ContactoComponent,
+    TerminosComponent,
   ],
   imports: [
     BrowserModule,
