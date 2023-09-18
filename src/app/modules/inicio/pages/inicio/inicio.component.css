@@ -1,8 +1,16 @@
 .container{
-    height: 200px;
-    width: 1000px;    
+    height: 50;
+    width: 50px;    
 }
 .carousel-item{
     height: 400px;
     
 } 
+
+.carrusel { 
+    margin-top: 15%;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 50px;
+}
