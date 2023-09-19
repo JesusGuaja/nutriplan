@@ -8,6 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
 
+import { AuthModule } from './modules/auth/auth.module';
+
+import { InicioModule } from './modules/inicio/inicio.module';
+
+
 import { environment } from 'src/environments/environment';
 import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFireAuthModule} from '@angular/fire/compat/auth';
@@ -36,11 +41,19 @@ import { TerminosComponent } from './pages/terminos/terminos.component';
     RouterModule,
     BrowserAnimationsModule,
     SharedModule,
+
     InicioModule,
+
+
+    AuthModule,
+
+
+
+
+
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireStorageModule,
-
     AppRoutingModule
 
   ],

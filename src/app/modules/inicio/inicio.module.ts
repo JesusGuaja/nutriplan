@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InicioRoutingModule } from './inicio-routing.module';
+
 import { InicioComponent } from './pages/inicio.component';
+
 
 import { SharedModule } from 'src/app/shared/shared.module';
 
@@ -11,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
+
   declarations: [InicioComponent],
   imports: [
     CommonModule,
