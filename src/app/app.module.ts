@@ -10,8 +10,6 @@ import { SharedModule } from './shared/shared.module';
 
 import { AuthModule } from './modules/auth/auth.module';
 
-import { InicioModule } from './modules/inicio/inicio.module';
-
 
 import { environment } from 'src/environments/environment';
 import {AngularFireModule} from '@angular/fire/compat';

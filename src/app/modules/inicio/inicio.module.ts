@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { InicioRoutingModule } from './inicio-routing.module';
 
-import { InicioComponent } from './pages/inicio.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
 
 
 import { SharedModule } from 'src/app/shared/shared.module';
