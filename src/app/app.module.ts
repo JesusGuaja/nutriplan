@@ -7,6 +7,7 @@ import { ButtonComponent } from './shared/components/button/button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
+import { InicioModule } from './modules/inicio/inicio.module';
 
 import { environment } from 'src/environments/environment';
 import {AngularFireModule} from '@angular/fire/compat';
@@ -27,6 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
     RouterModule,
     BrowserAnimationsModule,
     SharedModule,
+    InicioModule,
 
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
