@@ -7,14 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: rgb(32, 32, 32);
-}
 
 header {
     position: fixed;
-    top: 0;
-    left: 0;
+    margin-bottom: 10px;
     width: 100%;
     padding: 20px 100px;
     background-color: rgb(32, 32, 32);
@@ -22,6 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    background-color: rgb(32, 32, 32);
 }
 
 .logo {
@@ -35,7 +32,7 @@ header {
 }
 
 .navigation a {
-    position: relative;
+   
     font-size: 1.1em;
     color: white;
     text-decoration: none;
