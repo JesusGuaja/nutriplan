@@ -14,3 +14,33 @@
     margin-right: 0%;
     border-radius: 50px;
 }
+
+
+.button_Horarios {
+    background-color: #77AF3C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 0.5rem 1.1rem;
+    margin: auto;
+    border-radius: 60px;
+    border: none;
+    margin: 5px;
+  }
+  .container {
+    position: relative;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
