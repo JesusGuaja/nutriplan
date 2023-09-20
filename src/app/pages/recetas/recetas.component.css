@@ -4,3 +4,16 @@
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 0px 26px 30px 0px rgba(0, 0, 0, 0.69);
 }
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
