@@ -13,11 +13,10 @@ import { AppRoutingModule } from '../app-routing.module';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ]
 })
 export class SharedModule { }

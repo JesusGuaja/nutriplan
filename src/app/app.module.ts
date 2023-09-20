@@ -39,16 +39,8 @@ import { TerminosComponent } from './pages/terminos/terminos.component';
     RouterModule,
     BrowserAnimationsModule,
     SharedModule,
-
     InicioModule,
-
-
     AuthModule,
-
-
-
-
-
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireStorageModule,

@@ -21,7 +21,7 @@
 
 .form-box h2 {
     font-size: 2em;
-    color: #162938;
+    color: #242424;
     text-align: center;
 }
 
@@ -29,7 +29,7 @@
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #162938;
+    border-bottom: 2px solid #242424;
     margin: 30px 0;
 }
 
@@ -39,7 +39,7 @@
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #162938;
+    color: #242424;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -60,13 +60,13 @@
 
 .input-box {
     font-size: 1.2em;
-    color: #162938;
+    color: #242424;
     line-height: 57px;
 }
 
 .remember-forgot {
     font-size: .9em;
-    color: #162938;
+    color: #242424;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -74,12 +74,12 @@
 }
 
 .remember-forgot label input {
-    accent-color: #162938;
+    accent-color: #242424;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #162938;
+    color: #242424;
     text-decoration: none;
 }
 
@@ -90,7 +90,7 @@
 .btn {
     width: 100%;
     height: 45px;
-    background: #162938;
+    background: #242424;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -102,14 +102,14 @@
 
 .login-register {
     font-size: .9em;
-    color: #162938;
+    color: #242424;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a {
-    color: #162938;
+    color: #242424;
     text-decoration: none;
     font-weight: 600;
 }
@@ -117,3 +117,14 @@
 .login-register p a:hover {
     text-decoration: underline;
 }
+
+.separacion {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+  
+  
+  

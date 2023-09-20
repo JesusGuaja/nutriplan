@@ -1,6 +1,0 @@
-.cardReceta {
-    border-radius: 10px;
-    border: 5px solid rgba(128, 111, 111, 0.50);
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 26px 30px 0px rgba(0, 0, 0, 0.69);
-}
