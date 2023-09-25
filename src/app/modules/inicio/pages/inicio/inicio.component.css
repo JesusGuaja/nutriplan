@@ -17,7 +17,7 @@
 
 .button_Horarios {
     background-color: #77AF3C;
-    color: white;
+    color: black;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -25,16 +25,16 @@
     padding: 0.5rem 1rem;
     border-radius: 60px;
     border: none;
-    margin: 5px;
+    margin: 15px;
   }
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .vertical-center {
-    position: absolute;
-  }
 
-  
+  .botones {
+    display: flex; 
+    margin-bottom: 150%;
+    margin-top: -700%;
+  }
