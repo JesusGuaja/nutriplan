@@ -26,6 +26,11 @@ import { AppRoutingModule } from './app-routing.module';
     RouterModule,
     BrowserAnimationsModule,
     SharedModule,
+
+
+    InicioModule,
+    AuthModule,
+
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireStorageModule,
