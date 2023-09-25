@@ -1,8 +1,19 @@
 .card{
     height: 400px;
+    
 
 }
 
 .card-img-top {
     height: 250px;
+    
+}
+
+.h1{
+   
+ text-align: center;
+}
+
+.btn{
+    background-color: #79AC78;
 }
