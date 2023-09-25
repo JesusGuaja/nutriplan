@@ -1,7 +1,7 @@
 .card{
     height: 400px;
     
-
+    margin-bottom: 50px;
 }
 
 .card-img-top {
@@ -15,5 +15,6 @@
 }
 
 .btn{
-    background-color: #79AC78;
+    background-color: #77AF3C;
+    color: white;
 }

@@ -9,7 +9,7 @@
 
 .carrusel { 
     margin-top: 7%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     margin-left: 0%;
     margin-right: 0%;
     border-radius: 50px;
@@ -23,9 +23,9 @@
     font-size: 16px;
     margin: 4px 2px auto;
     padding: 0.5rem 1rem;
-    border-radius: 60px;
+    border-radius: 5px;
     border: none;
-    margin: 15px;
+    margin: 50px;
   }
   .container {
     display: flex;
