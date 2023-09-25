@@ -18,10 +18,10 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     InicioRoutingModule,
-    SharedModule,
-    NgFor,
-    FormsModule,
-    NgbCarouselModule,
+    // SharedModule,
+    // NgFor,
+    // FormsModule,
+    // NgbCarouselModule,
   
   ],
   exports: [InicioComponent],

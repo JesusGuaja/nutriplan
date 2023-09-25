@@ -1,0 +1,38 @@
+
+.cardReceta {
+    border-radius: 10px;
+    border: 5px solid rgba(128, 111, 111, 0.50);
+    background: url("https://media.a24.com/p/7121656cb14b053a043ddc8135dd553f/adjuntos/296/imagenes/009/226/0009226852/1200x675/smart/patricia-bullrich-se-prepara-emprender-una-gira-varias-provincias-del-interior-bordo-la-patoneta-foto-telam.jpg"), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 26px 30px 0px rgba(0, 0, 0, 0.69);
+}
+
+.button_Horarios {
+    background-color: #77AF3C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 0.5rem 1.1rem;
+    margin: auto;
+    border-radius: 60px;
+    border: none;
+    margin: 5px;
+  }
+  .container {
+    position: relative;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+
+
