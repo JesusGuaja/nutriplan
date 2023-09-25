@@ -13,6 +13,10 @@
     transition: height .2s ease;
 }
 
+.wrapper {
+    margin-top: 100px;
+}
+
 .wrapper.active {
     height: 520px;
 }

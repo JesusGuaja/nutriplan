@@ -13,6 +13,10 @@
     transition: height .2s ease;
 }
 
+.wrapper {
+    margin-top: 270px;
+    margin-bottom: 170px;
+}
 
 .wrapper .form-box {
     width: 100%;
