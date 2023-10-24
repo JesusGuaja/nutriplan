@@ -9,6 +9,7 @@ import { TerminosComponent } from './terminos/terminos.component';
 import { DesayunosComponent } from './recetas/desayunos/desayunos.component';
 import { AlmuerzosComponent } from './recetas/almuerzos/almuerzos.component';
 import { MeriendasComponent } from './recetas/meriendas/meriendas.component';
+import { CenasComponent } from './recetas/cenas/cenas.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MeriendasComponent } from './recetas/meriendas/meriendas.component';
     TerminosComponent,
     DesayunosComponent,
     AlmuerzosComponent,
-    MeriendasComponent
+    MeriendasComponent,
+    CenasComponent
   ],
   imports: [
     CommonModule,
