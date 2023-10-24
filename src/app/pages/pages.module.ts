@@ -12,6 +12,7 @@ import { MeriendasComponent } from './recetas/meriendas/meriendas.component';
 import { CenasComponent } from './recetas/cenas/cenas.component';
 
 
+
 @NgModule({
   declarations: [
     ContactoComponent,
@@ -25,13 +26,15 @@ import { CenasComponent } from './recetas/cenas/cenas.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+  
   ],
   exports:[
     ContactoComponent,
     FavoritosComponent,
     RecetasComponent,
-    TerminosComponent
+    TerminosComponent,
+   
   ]
 })
 export class PagesModule { }
