@@ -7,6 +7,7 @@ import { FavoritosComponent } from './favoritos/favoritos.component';
 import { RecetasComponent } from './recetas/recetas.component';
 import { TerminosComponent } from './terminos/terminos.component';
 import { DesayunosComponent } from './recetas/desayunos/desayunos.component';
+import { AlmuerzosComponent } from './recetas/almuerzos/almuerzos.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DesayunosComponent } from './recetas/desayunos/desayunos.component';
     FavoritosComponent,
     RecetasComponent,
     TerminosComponent,
-    DesayunosComponent
+    DesayunosComponent,
+    AlmuerzosComponent
   ],
   imports: [
     CommonModule,
