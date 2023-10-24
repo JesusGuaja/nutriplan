@@ -1,25 +1,25 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="logo">
+          <img src="./assets/logo-nutriplan2.png" alt="" id="logo1" />
+        </h2>
+      </div>
+      <div class="col-11">
+        <nav class="navigation">
+          <a href="" id="inicio" routerLink="/inicio">INICIO</a>
+          <button class="mat-button" [matMenuTriggerFor]="menu" id="recetas">RECETAS</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
 
-
-
-  
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="logo"><img src="./assets/logo-nutriplan2.png" alt="" id="logo1"></h2>
-        </div>
-        <div class="col-11">
-          <nav class="navigation">
-            <a href="" id="inicio" routerLink="/inicio">INICIO</a>
-            <a routerLink="/recetas" href="" id="recetas">RECETAS</a>
-            <a href="" id="favoritos">FAVORITOS</a>
-            <a  href="" id="nosotros" >NOSOTROS</a>
-            <button class="btnLogin-popup" routerLink="/login">LOGIN</button>
-          </nav>                                                                             
-        </div>
+          <a href="" id="favoritos">FAVORITOS</a>
+          <a href="" id="nosotros">NOSOTROS</a>
+          <button class="btnLogin-popup" routerLink="/login">LOGIN</button>
+        </nav>
       </div>
     </div>
-  </header>
-
-
-
+  </div>
+</header>
