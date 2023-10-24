@@ -8,6 +8,7 @@ import { RecetasComponent } from './recetas/recetas.component';
 import { TerminosComponent } from './terminos/terminos.component';
 import { DesayunosComponent } from './recetas/desayunos/desayunos.component';
 import { AlmuerzosComponent } from './recetas/almuerzos/almuerzos.component';
+import { MeriendasComponent } from './recetas/meriendas/meriendas.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AlmuerzosComponent } from './recetas/almuerzos/almuerzos.component';
     RecetasComponent,
     TerminosComponent,
     DesayunosComponent,
-    AlmuerzosComponent
+    AlmuerzosComponent,
+    MeriendasComponent
   ],
   imports: [
     CommonModule,
