@@ -41,6 +41,17 @@ export class CrudService {
     return this.database.collection('receta').doc(idProducto).update(nuevaData)
   }
 
-  
+  //funcion para eliminar la receta
+  eliminarReceta(idProducto: string){
+    return new Promise((resolve, reject) => {
+      try{
+        const resp = this.recetasColeccion.doc(idProducto).delete()
+        resolve(resp)
+      }
+      catch(error){
+        reject(error)
+      }
+    })
+  }
 
 }
