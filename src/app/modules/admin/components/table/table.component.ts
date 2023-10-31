@@ -81,5 +81,38 @@ export class TableComponent {
       descripcion: this.receta.value.descripcion!,
       categoria: this.receta.value.categoria!
     }
+
+    this.servicioCrud.modificarReceta(this.recetaSeleccionada.idProducto, datos)
+    .then(receta => {
+      alert("La receta fue modificada con exito!")
+    })
+    .catch(error => {
+      alert("No se pudo modificar la receta \n"+error)
+    })
   }
+
+  //eliminar receta
+  mostrarBorrar(recetaSeleccionada: Receta){
+    this.modalVisibleReceta = true;
+    this.recetaSeleccionada = recetaSeleccionada;
+  }
+
+  borrarReceta(){
+    this.servicioCrud.eliminarReceta(this.recetaSeleccionada.idProducto)
+    .then(respuesta => {
+      alert("La receta se ha eliminado correctamente");
+    })
+    .catch(error => {
+      alert("No se ha podido eliminar la receta \n"+error)
+    })
+  }
+
+
+
+
+
+
+
+
+  
 }
