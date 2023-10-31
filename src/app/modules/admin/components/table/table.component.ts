@@ -105,14 +105,5 @@ export class TableComponent {
     .catch(error => {
       alert("No se ha podido eliminar la receta \n"+error)
     })
-  }
-
-
-
-
-
-
-
-
-  
+  }  
 }
