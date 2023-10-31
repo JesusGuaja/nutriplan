@@ -12,7 +12,7 @@ export class CrudService {
   private recetasColeccion: AngularFirestoreCollection<Receta>
   
   constructor(private database: AngularFirestore) { 
-    this.recetasColeccion = database.collection('productos')
+    this.recetasColeccion = database.collection('receta')
   }
 
   //funcion para crear la receta
@@ -37,5 +37,10 @@ export class CrudService {
   }
 
   //funcion para editar la receta
+  modificarReceta(idProducto: string, nuevaData: Receta){
+    return this.database.collection('receta').doc(idProducto).update(nuevaData)
+  }
+
   
+
 }
