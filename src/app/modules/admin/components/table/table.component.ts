@@ -57,4 +57,29 @@ export class TableComponent {
   }
 
   // editar receta
+  mostrarEditar(recetaSeleccionada: Receta){
+
+    this.recetaSeleccionada = recetaSeleccionada;
+
+    this.receta.setValue({
+      nombre: recetaSeleccionada.nombre,
+      imagen: recetaSeleccionada.imagen,
+      alt: recetaSeleccionada.alt,
+      descripcion: recetaSeleccionada.descripcion,
+      categoria: recetaSeleccionada.categoria
+    })
+  }
+
+  //recibe los valores nuevos en el formulario
+
+  editarReceta(){
+    let datos: Receta = {
+      idProducto: this.recetaSeleccionada.idProducto,
+      nombre: this.receta.value.nombre!,
+      imagen: this.receta.value.imagen!,
+      alt: this.receta.value.alt!,
+      descripcion: this.receta.value.descripcion!,
+      categoria: this.receta.value.categoria!
+    }
+  }
 }
