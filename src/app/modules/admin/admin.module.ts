@@ -21,6 +21,12 @@ import { AdminComponent } from './pages/admin/admin.component';
     FormsModule,
     ReactiveFormsModule,
     MatIconModule
+  ],
+  exports: [
+    TableComponent,
+    FormsModule,
+    ReactiveFormsModule,
+    MatIconModule
   ]
 })
 export class AdminModule { }
