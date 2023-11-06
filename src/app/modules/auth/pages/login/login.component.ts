@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-//falta importar usuario
+
 import {Router} from '@angular/router';
+import { Usuario } from '../../../../models/usuario';
 
 
 @Component({
@@ -20,6 +21,6 @@ export class LoginComponent {
     contrasena: '',
   }
 
-  
+
 }
 
