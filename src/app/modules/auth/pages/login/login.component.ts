@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import {Router} from '@angular/router';
 import { Usuario } from '../../../../models/usuario';
  // falta importar authservice y firestoreservice
@@ -23,7 +22,7 @@ export class LoginComponent {
   }
 
   constructor(
-    puclic servicioAuth : AuthService, 
+    public servicioAuth : AuthService, 
     public firestore : FirestoreService,
     public router : Router
   ){}

@@ -1,3 +1,4 @@
+<!-- /
 <div class="container">
     <div class="row">
         <div class="col separacion">
@@ -34,5 +35,50 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+/ -->
+
+<div class="container">
+    <div class="row">
+        <h1>Registrate</h1>
+        <i class="material-icons" style="font-size: 200px">person</i>
+
+        <!-- Nombre -->
+        <mat-form-field appearance="fill">
+            <mat-label>Ingrese un nombre de usuario:</mat-label>
+            <input [(ngModel)]="usuarios.nombre" matInput type="text" required>
+        </mat-form-field>
+        
+        <!-- Email -->
+        <mat-form-field appearance="fill">
+            <mat-label>Ingrese un email:</mat-label>
+            <!-- input para tomar el email -->
+            <!-- enlace bidireccional -->
+            <input [(ngModel)]="usuarios.email" matInput type="text" required>
+        </mat-form-field>
+
+        <!-- Rol -->
+        <mat-form-field>
+            <mat-label>Seleccione un rol:</mat-label>
+            <mat-select [(ngModel)]="usuarios.rol" required>
+              <mat-option value="adm">Administrador</mat-option>
+              <mat-option value="vis">Visitante</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <!-- Contraseña -->
+        <mat-form-field>
+            <mat-label>Ingrese una contraseña:</mat-label>
+            <!-- input para tomar contraseña -->
+            <input [(ngModel)]="usuarios.contrasena" matInput [type]="hide ? 'password' : 'text'" #input minlength="6" required>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-hint align="start">Mínimo:6/{{input.value.length}}</mat-hint>
+        </mat-form-field>
+        
+        <button class="boton" mat-raised-button color="primary" (click)="registrarse()">Registrar</button>
     </div>
 </div>
