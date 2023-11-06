@@ -4,14 +4,20 @@
             <h2>Iniciar sesión</h2>
             <form action="#">
                 <div class="input-box">
-                    <span class="icon"></span>
-                    <input type="email" required>
-                    <label for="">Email</label>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Ingrese un email</mat-label>
+                        <input [(ngModel)]="usuarios.email" matInput placeholder="Placeholder">
+                      </mat-form-field>
                 </div>
-                <div class="input-box">
-                    <span class="icon"></span>
-                    <input type="password" required>
-                    <label for="">Contraseña</label>
+                <div class="input-box" >
+                   <mat-form-field>
+                    <mat-label>Ingrese una contraseña:</mat-label>
+                    <input [(ngModel)] = "usuarios.contrasena" matInput [type]="hide ? 'password' : 'text' " #input minlength="6" required>
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'vissibility_off' : 'vissibility'}}</mat-icon>
+                    </button>
+                    
+                </mat-form-field>
                 </div>
                 <div class="remember-forgot">
                     <label for="">
