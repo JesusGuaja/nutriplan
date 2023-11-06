@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import {Router} from '@angular/router';
 import { Usuario } from '../../../../models/usuario';
+ // falta importar authservice y firestoreservice
 
 
 @Component({
@@ -20,6 +21,20 @@ export class LoginComponent {
     rol: '',
     contrasena: '',
   }
+
+  constructor(
+    puclic servicioAuth : AuthService, 
+    public firestore : FirestoreService,
+    public router : Router
+  ){}
+
+  async iniciar(){
+    const credenciales = {
+      email: this.usuarios.email,
+      contrasena: this.usuarios.contrasena
+    }
+  }
+
 
 
 }
