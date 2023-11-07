@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 import { Usuario } from '../../../../models/usuario';
- // falta importar authservice y firestoreservice
+import { AuthService } from '../../services/auth.service';
+import { FirestoreService } from 'src/app/shared/services/firestore.service';
+
 
 
 @Component({
