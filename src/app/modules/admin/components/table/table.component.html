@@ -1,7 +1,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">#</th>
+            <th scope="col">ID</th>
             <th scope="col">Nombre</th>
             <th scope="col">Imagen</th>
             <th scope="col">Descripción</th>
@@ -12,7 +12,7 @@
     <tbody>
         <tr *ngFor="let col of coleccionReceta">
             <!-- Vamos a aplicar interpolación -->
-            <th scope="row">1</th>
+            <th scope="row">{{col.idProducto}}</th>
             <td><img src="{{col.imagen}}" alt="{{col.alt}}" width="100px"></td>
             <td>{{col.nombre}}</td>
             <td>{{col.descripcion}}</td>
