@@ -48,7 +48,7 @@ export class TableComponent {
       // enviamos la nueva receta
       await this.servicioCrud.crearReceta(nuevaReceta)
       .then(receta => {
-        console.log(this.agregarReceta());
+        // console.log(this.agregarReceta());
         
         alert("Ha agregado una nueva receta con exito!");
       })
