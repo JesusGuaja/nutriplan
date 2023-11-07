@@ -1,37 +1,29 @@
-<div class="loguearse ">
-    <div class="wrapper">
-        <div class="form-box login">
-            <h2>Iniciar sesión</h2>
-            <form action="#">
-                <div class="input-box">
-                    <mat-form-field appearance="fill">
-                        <mat-label>Ingrese un email</mat-label>
-                        <input [(ngModel)]="usuarios.email" matInput placeholder="Placeholder">
-                      </mat-form-field>
-                </div>
-                <div class="input-box" >
-                   <mat-form-field>
-                    <mat-label>Ingrese una contraseña:</mat-label>
-                    <input [(ngModel)] = "usuarios.contrasena" matInput [type]="hide ? 'password' : 'text' " #input minlength="6" required>
-                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                        <mat-icon>{{hide ? 'vissibility_off' : 'vissibility'}}</mat-icon>
-                    </button>
-                    
-                </mat-form-field>
-                </div>
-                <div class="remember-forgot">
-                    <label for="">
-                        <input type="checkbox">
-                        Recordarme
-                    </label>
-                    <a href="#">Olvido su contraseña?</a>
-                </div>
-                <button type="submit" class="btn">Ingresar</button>
-                <div class="login-register">
-                    <p>No tienes una cuenta? <a routerLink="/register">Registrarse</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" >
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input [(ngModel)]="usuarios.email" name="email" type="email" class="login__input" placeholder="User name / Email">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input [(ngModel)]="usuarios.contrasena" name="contrasena" type="password" class="login__input" placeholder="Password">
+				</div>
+				<button (click)="iniciar()" class="button login__submit">
+					<span class="button__text">Log In Now</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>				
+			</form>
+			<div class="social-login">
+				<a routerLink="/register">Registrarse</a>
+			</div>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
 </div>
-

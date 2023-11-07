@@ -1,147 +1,181 @@
-.wrapper {
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: height .2s ease;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
 }
 
-.wrapper.active {
-    height: 520px;
+body {
+	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
 }
 
-.wrapper .form-box.register {
-    position: absolute;
-    transform: translate(400px);
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.wrapper .form-box.login {
-    transition: transform .18s ease;
-    transform: translate(0);
+.screen {		
+	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 0px 0px 24px #5C5696;
 }
 
-.wrapper.active .form-box.login {
-    transition: none;
-    transform: translate(-400px);
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
 }
 
-.wrapper .form-box {
-    width: 100%;
-    padding: 40px;
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
 }
 
-.form-box h2 {
-    font-size: 2em;
-    color: #242424;
-    text-align: center;
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
 }
 
-.input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #242424;
-    margin: 30px 0;
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;
+	background: #FFF;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
 }
 
-.input-box label {
-    position: absolute;
-    top: 25.5px;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #242424;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #6C63AC;	
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
 }
 
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px;
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg, #5D54A4, #6A679E);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
 }
 
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #7E7BB9;	
+	top: 420px;
+	right: 50px;	
+	border-radius: 60px;
 }
 
-.input-box {
-    font-size: 1.2em;
-    color: #242424;
-    line-height: 57px;
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
 }
 
-.remember-forgot {
-    font-size: .9em;
-    color: #242424;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
 }
 
-.remember-forgot label input {
-    accent-color: #242424;
-    margin-right: 3px;
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
 }
 
-.remember-forgot a {
-    color: #242424;
-    text-decoration: none;
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
 }
 
-.remember-forgot a:hover {
-    text-decoration: underline;
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
 }
 
-.btn {
-    width: 100%;
-    height: 45px;
-    background: #242424;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #ffff;
-    font-weight: 500;
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
 }
 
-.login-register {
-    font-size: .9em;
-    color: #242424;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #679e6a;
+	outline: none;
 }
 
-.login-register p a {
-    color: #242424;
-    text-decoration: none;
-    font-weight: 600;
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #75b575;
 }
 
-.login-register p a:hover {
-    text-decoration: underline;
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
 }
 
-.loguearse {
-    margin-top: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    margin: 0; 
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-  
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);	
+}
