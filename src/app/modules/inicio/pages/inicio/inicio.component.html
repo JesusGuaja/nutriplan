@@ -1,65 +1,106 @@
-<div class="carrusel">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img src="assets/images/galletitas.jpg" class="d-block w-100" alt="" >
-            <div class="carousel-caption d-none d-md-block">
-              
-             
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="assets/images/budin.jpg" class="d-block w-100" alt="..." >
-            <div class="carousel-caption d-none d-md-block">
-              
-              
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/almuerzos.jpg" class="d-block w-100" alt="..." >
-            <div class="carousel-caption d-none d-md-block">
-              
-              
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-</div>
-
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <body>
+    <!-- ... -->
+    <div class="container">
       <div class="botones">
-        <div><button class="button_Horarios"><img src="../../../assets/breakfast-icon.png" width="110px" height="110px"></button>
-        <br>
-        <p style="text-align: center; font-size: 25px;"><b class="texto">DESAYUNO</b></p>
+        <!-- ... -->
+        <div>
+          <button class="button_Horarios"><img src="../../../assets/snack-icon.png" width="110px" height="110px"></button>
+          <br>
+          <p style="text-align: center; font-size: 25px;"><b class="texto">MERIENDA</b></p>
         </div>
-        <div><button class="button_Horarios"><img src="../../../assets/lunch-icon.png" width="110px" height="110px"></button>
-        <br>
-        <p style="text-align: center; font-size: 25px;"><b class="texto">ALMUERZO</b></p>
-        </div>
-        <div><button class="button_Horarios"><img src="../../../assets/snack-icon.png" width="110px" height="110px"></button>
-        <br>
-        <p style="text-align: center; font-size: 25px;"><b class="texto">MERIENDA</b></p>
-        </div>
-        <div><button class="button_Horarios"><img src="../../../assets/dinner-icon.png" width="110px" height="110px"></button>
-        <br>
-        <p style="text-align: center; font-size: 25px;"><b class="texto">CENA</b></p>
+        <div>
+          <button class="button_Horarios"><img src="../../../assets/dinner-icon.png" width="110px" height="110px"></button>
+          <br>
+          <p style="text-align: center; font-size: 25px;"><b class="texto">CENA</b></p>
         </div>
       </div>
-</div>
+    </div>
+    <!-- ... -->
+  </body>
+  <div class="carrusel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="assets/images/galletitas.jpg" class="d-block w-100" alt="" >
+              <div class="carousel-caption d-none d-md-block">
+                
+              
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="assets/images/budin.jpg" class="d-block w-100" alt="..." >
+              <div class="carousel-caption d-none d-md-block">
+                
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/almuerzos.jpg" class="d-block w-100" alt="..." >
+              <div class="carousel-caption d-none d-md-block">
+                
+                
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
 
-<app-cards></app-cards>
+  <div class="container">
+        <div class="botones">
+          <div><button class="button_Horarios"><img src="../../../assets/breakfast-icon.png" width="110px" height="110px"></button>
+          <br>
+          <p style="text-align: center; font-size: 25px;"><b class="texto">DESAYUNO</b></p>
+          </div>
+          <div><button class="button_Horarios"><img src="../../../assets/lunch-icon.png" width="110px" height="110px"></button>
+          <br>
+          <p style="text-align: center; font-size: 25px;"><b class="texto">ALMUERZO</b></p>
+          </div>
+          <div><button class="button_Horarios"><img src="../../../assets/snack-icon.png" width="110px" height="110px"></button>
+          <br>
+          <p style="text-align: center; font-size: 25px;"><b class="texto">MERIENDA</b></p>
+          </div>
+          <div><button class="button_Horarios"><img src="../../../assets/dinner-icon.png" width="110px" height="110px"></button>
+          <br>
+          <p style="text-align: center; font-size: 25px;"><b class="texto">CENA</b></p>
+          </div>
+        </div>
+  </div>
+  <div id="favoritos">
+    <!-- Favoritos se añaden aca -->
+  </div>
+
+  <script>
+    $("#favorito1").click(function() {
+        var cardClone = $("#card").clone();
+        cardClone.find("#favorito1").remove(); // remove the add to favorites button
+        $("#favoritos").append(cardClone);
+    });
+  </script>
+  <app-cards></app-cards>
+  
+</body>
 
  
