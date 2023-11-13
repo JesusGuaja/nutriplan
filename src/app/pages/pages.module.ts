@@ -17,14 +17,11 @@ import { CenasComponent } from './recetas/cenas/cenas.component';
 @NgModule({
   declarations: [
     FavoritosComponent,
-    RecetasComponent,
     TerminosComponent,
-
     DesayunosComponent,
     AlmuerzosComponent,
     MeriendasComponent,
-    CenasComponent
-
+    CenasComponent,
     ContactanosComponent
   ],
   imports: [
@@ -35,7 +32,6 @@ import { CenasComponent } from './recetas/cenas/cenas.component';
   exports:[
     ContactanosComponent,
     FavoritosComponent,
-    RecetasComponent,
     TerminosComponent,
    
   ]

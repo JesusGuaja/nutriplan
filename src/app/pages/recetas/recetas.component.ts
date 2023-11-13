@@ -8,9 +8,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 @Component({
   selector: 'app-recetas',
   templateUrl: './recetas.component.html',
-  styleUrls: ['./recetas.component.css']
-  selector: 'select-disabled-example',
-  templateUrl: 'select-disabled-example.html',
+  styleUrls: ['./recetas.component.css'],
   standalone: true,
   imports: [
     MatCheckboxModule,
