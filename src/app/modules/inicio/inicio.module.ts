@@ -6,6 +6,8 @@ import { InicioRoutingModule } from './inicio-routing.module';
 import { InicioComponent } from './pages/inicio/inicio.component';
 
 
+
+
 import { SharedModule } from 'src/app/shared/shared.module';
 
 import { NgFor } from '@angular/common';
@@ -19,10 +21,6 @@ import { CardsComponent } from './cards/cards.component';
   imports: [
     CommonModule,
     InicioRoutingModule,
-    // SharedModule,
-    // NgFor,
-    // FormsModule,
-    // NgbCarouselModule,
   
   ],
   exports: [InicioComponent, CardsComponent],
