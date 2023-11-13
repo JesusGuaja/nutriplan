@@ -6,6 +6,11 @@ import { ContactanosComponent } from './contactanos/contactanos.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { RecetasComponent } from './recetas/recetas.component';
 import { TerminosComponent } from './terminos/terminos.component';
+import { DesayunosComponent } from './recetas/desayunos/desayunos.component';
+import { AlmuerzosComponent } from './recetas/almuerzos/almuerzos.component';
+import { MeriendasComponent } from './recetas/meriendas/meriendas.component';
+import { CenasComponent } from './recetas/cenas/cenas.component';
+
 
 
 
@@ -14,17 +19,25 @@ import { TerminosComponent } from './terminos/terminos.component';
     FavoritosComponent,
     RecetasComponent,
     TerminosComponent,
+
+    DesayunosComponent,
+    AlmuerzosComponent,
+    MeriendasComponent,
+    CenasComponent
+
     ContactanosComponent
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+  
   ],
   exports:[
     ContactanosComponent,
     FavoritosComponent,
     RecetasComponent,
-    TerminosComponent
+    TerminosComponent,
+   
   ]
 })
 export class PagesModule { }
