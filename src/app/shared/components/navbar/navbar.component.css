@@ -48,6 +48,14 @@ header {
     margin-left: 60px;
 }
 
+.mat-button{
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
 /*.navigation a::after {
     content: '';
     position: absolute;

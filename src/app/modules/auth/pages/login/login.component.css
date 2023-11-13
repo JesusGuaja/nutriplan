@@ -1,4 +1,38 @@
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height .2s ease;
+}
+
+.wrapper {
+    margin-top: 100px;
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transform: translate(400px);
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translate(0);
+}
+
 
 * {
 	box-sizing: border-box;

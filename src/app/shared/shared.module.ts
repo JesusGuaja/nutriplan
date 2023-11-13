@@ -5,7 +5,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule } from '@angular/router';
+
 import { ButtonComponent } from './components/button/button.component';
+
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 @NgModule({
@@ -17,6 +22,9 @@ import { ButtonComponent } from './components/button/button.component';
   imports: [
     CommonModule,   
     RouterModule,
+    MatMenuModule,
+    MatButtonModule
+     
   ],
   exports: [
     NavbarComponent,

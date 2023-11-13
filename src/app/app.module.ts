@@ -15,6 +15,7 @@ import { InicioModule } from './modules/inicio/inicio.module';
 import { AuthModule } from './modules/auth/auth.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
