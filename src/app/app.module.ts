@@ -13,6 +13,7 @@ import {AngularFireStorageModule} from '@angular/fire/compat/storage';
 import { AppRoutingModule } from './app-routing.module';
 import { InicioModule } from './modules/inicio/inicio.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { AdminModule } from './modules/admin/admin.module';
 
 
 
@@ -28,6 +29,7 @@ import { AuthModule } from './modules/auth/auth.module';
     SharedModule,
     InicioModule,
     AuthModule,
+    AdminModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireStorageModule,
