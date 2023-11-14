@@ -4,6 +4,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @Component({
   selector: 'app-recetas',
@@ -17,6 +18,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    SharedModule
   ],
 })
 export class RecetasComponent {

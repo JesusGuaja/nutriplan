@@ -23,7 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,   
     RouterModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
      
   ],
   exports: [

@@ -10,6 +10,7 @@ import { DesayunosComponent } from './recetas/desayunos/desayunos.component';
 import { AlmuerzosComponent } from './recetas/almuerzos/almuerzos.component';
 import { MeriendasComponent } from './recetas/meriendas/meriendas.component';
 import { CenasComponent } from './recetas/cenas/cenas.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -27,6 +28,7 @@ import { CenasComponent } from './recetas/cenas/cenas.component';
   imports: [
     CommonModule,
     PagesRoutingModule,
+    SharedModule
   
   ],
   exports:[
