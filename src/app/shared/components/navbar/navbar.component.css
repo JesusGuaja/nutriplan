@@ -15,7 +15,6 @@ header {
     z-index: 999;
 }
 
-
 header {
     position: fixed;
     margin-bottom: 10px;
@@ -92,4 +91,8 @@ header {
 .navigation .btnLogin-popup:hover {
     background: white;
     color: #162938;
+}
+
+.texto {
+    margin-top: 18px;
 }
