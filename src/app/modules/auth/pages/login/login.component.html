@@ -21,7 +21,10 @@
                     </label>
                     <a href="#">Olvido su contraseña?</a>
                 </div>
-                <button type="submit" class="btn">INGRESAR</button>
+                <button (click)="iniciar()" class="button login__submit btn" type="submit">
+					<span class="button__text">INGRESAR</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>	
                 <div class="login-register">
                     <p>No tienes una cuenta? <a routerLink="/register">Registrarse</a></p>
                 </div>
