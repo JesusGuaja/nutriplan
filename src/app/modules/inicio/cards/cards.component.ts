@@ -33,5 +33,18 @@ export class CardsComponent {
     })
   }
 
+  async agregarReceta(){
+    if (this.receta.valid){
+      let nuevoProducto: Receta = {
+        idProducto: '', // único que guardamos vacío; lo creamos en el CRUD
+        nombre: this.receta.value.nombre!,
+        imagen: this.receta.value.imagen!,
+        alt: this.receta.value.alt!,
+        descripcion: this.receta.value.descripcion!,
+        categoria: this.receta.value.categoria!
+      };
 
-}
+
+    }}
+    }
+  
