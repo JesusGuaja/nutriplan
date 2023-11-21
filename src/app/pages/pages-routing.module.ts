@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RecetasComponent } from './recetas/recetas.component';
-import { FavoritosComponent } from './favoritos/favoritos.component';
 import { TerminosComponent } from './terminos/terminos.component';
 import { DesayunosComponent } from './recetas/desayunos/desayunos.component';
 import { AlmuerzosComponent } from './recetas/almuerzos/almuerzos.component';
@@ -14,7 +13,6 @@ import { ContactanosComponent } from './contactanos/contactanos.component';
 const routes: Routes = [
   {path:"contacto",component:ContactanosComponent},
   {path:"recetas",component:RecetasComponent},
-  {path:"favoritos",component:FavoritosComponent},
   {path:"terminos",component:TerminosComponent},
   {path:"desayunos",component:DesayunosComponent},
   {path:"almuerzos",component:AlmuerzosComponent},
