@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Receta } from 'src/app/models/receta';
+import { CrudService } from '../../admin/services/crud.service';
 
 @Component({
   selector: 'app-cards',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent {
-
+  constructor (private servicioCrud: CrudService){
+    
+  }
 }
