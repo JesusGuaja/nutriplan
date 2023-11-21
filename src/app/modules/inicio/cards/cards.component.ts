@@ -25,12 +25,13 @@ export class CardsComponent {
 
   }
 
-  // ngOnInit(): void{
-   
-  //    this.servicioCrud.obtenerReceta().subscribe(receta => {
-  //     this.coleccionRecetas = receta;
-  //   })
-  // }
+  ngOnInit(): void{
+    /* llamamos función obtenerReceta y le enviamos los nuevos valores
+    del formulario Receta (se guardan en la colección) */
+     this.servicioCrud.obtenerReceta().subscribe(receta => {
+      this.coleccionRecetas = receta;
+    })
+  }
 
 
 }
