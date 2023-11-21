@@ -14,9 +14,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { InicioModule } from './modules/inicio/inicio.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ContactanosComponent } from './pages/contactanos/contactanos.component';
-
-
-import { AuthModule } from './modules/auth/auth.module';
 import { AdminModule } from './modules/admin/admin.module';
 
 
@@ -24,7 +21,7 @@ import { AdminModule } from './modules/admin/admin.module';
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonComponent
+ 
 
   ],
   imports: [

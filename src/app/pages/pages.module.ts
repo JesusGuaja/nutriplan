@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
-import { RecetasComponent } from './recetas/recetas.component';
 import { TerminosComponent } from './terminos/terminos.component';
 
 
@@ -12,7 +11,6 @@ import { TerminosComponent } from './terminos/terminos.component';
 @NgModule({
   declarations: [
     FavoritosComponent,
-    RecetasComponent,
     TerminosComponent,
     ContactanosComponent
   ],
@@ -23,7 +21,6 @@ import { TerminosComponent } from './terminos/terminos.component';
   exports:[
     ContactanosComponent,
     FavoritosComponent,
-    RecetasComponent,
     TerminosComponent
   ]
 })
