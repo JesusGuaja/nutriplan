@@ -6,22 +6,18 @@
             <form action="#">
                 <div class="input-box">
                     <span class="icon"></span>
-                    <input type="email" required>
+                    <input [(ngModel)]="usuarios.email" name="email" type="email" class="login__input" required>
                     <label for="">Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"></span>
-                    <input type="password" required>
+                    <input [(ngModel)]="usuarios.password" name="password" type="password" class="login__input" required>
                     <label for="">Contraseña</label>
                 </div>
-                <div class="remember-forgot">
-                    <label for="">
-                        <input type="checkbox">
-                        Recordarme
-                    </label>
-                    <a href="#">Olvido su contraseña?</a>
-                </div>
-                <button type="submit" class="btn">INGRESAR</button>
+                <button (click)="iniciar()" class="button login__submit btn" type="submit">
+					<span class="button__text">INGRESAR</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>	
                 <div class="login-register">
                     <p>No tienes una cuenta? <a routerLink="/register">Registrarse</a></p>
                 </div>
@@ -29,33 +25,4 @@
         </div>
     </div>
 </div>
-<!--<div class="container">
-	<div class="screen">
-		<div class="screen__content">
-			<form class="login" >
-				<div class="login__field">
-					<i class="login__icon fas fa-user"></i>
-					<input [(ngModel)]="usuarios.email" name="email" type="email" class="login__input" placeholder="User name / Email">
-				</div>
-				<div class="login__field">
-					<i class="login__icon fas fa-lock"></i>
-					<input [(ngModel)]="usuarios.contrasena" name="contrasena" type="password" class="login__input" placeholder="Password">
-				</div>
-				<button (click)="iniciar()" class="button login__submit">
-					<span class="button__text">Log In Now</span>
-					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
-			</form>
-			<div class="social-login">
-				<a routerLink="/register">Registrarse</a>
-			</div>
-		</div>
-		<div class="screen__background">
-			<span class="screen__background__shape screen__background__shape4"></span>
-			<span class="screen__background__shape screen__background__shape3"></span>		
-			<span class="screen__background__shape screen__background__shape2"></span>
-			<span class="screen__background__shape screen__background__shape1"></span>
-		</div>		
-	</div>
-</div>-->
 <app-footer></app-footer>
