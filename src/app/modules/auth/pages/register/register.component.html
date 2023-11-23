@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col separacion">
@@ -6,33 +7,25 @@
                     <h2>Registrarse</h2>
                     <form action="#">
                           <div class="input-box">
-                          <span class="icon"></span>
-                          <input [(ngModel)]="usuarios.nombre" matInput type="text" required>
+                          <input [(ngModel)]="usuarios.nombre" type="text" required>
                           <label for="">Usuario</label>
                           </div>
                         <div class="input-box">
-                            <span class="icon"></span>
-                            <input [(ngModel)]="usuarios.email" matInput type="text" required>
-                            <label for="">Email</label>
+                            <input id="email" [(ngModel)]="usuarios.email" type="email" name="email" required>
+                            <label for="email">Email</label>
                         </div>
                         <div class="input-box">
-                            <span class="icon"></span>
-                            <input [(ngModel)]="usuarios.contrasena" matInput [type]="hide ? 'password' : 'text'" #input minlength="6" required>
-                            <label for="">Contraseña</label>
-                        </div>
-                        <div class="remember-forgot">
-                            <label for="">
-                                <input type="checkbox">
-                                Acepto los terminos y condiciones
-                            </label>
+                            <input id="password" [(ngModel)]="usuarios.password" name="password" [type]="hide ? 'password' : 'text'" minlength="6" required>
+                            <label for="password">Contraseña</label>
                         </div>
                         <button type="submit" class="btn" (click)="registrarse()">Registrarse</button>
-                        <div class="login-register">
-                            <p>Ya tienes una cuenta? <a routerLink="/login">Iniciar sesión</a></p>
-                        </div>
                     </form>
+                    <div class="login-register">
+                        <p>Ya tienes una cuenta? <a routerLink="/login">Iniciar sesión</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<app-footer></app-footer>
