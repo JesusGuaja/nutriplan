@@ -10,11 +10,10 @@
 header {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; 
     width: 100%;
     z-index: 999;
 }
-
 
 header {
     position: fixed;
@@ -86,10 +85,15 @@ header {
     font-weight: 500;
     margin-left: 330px;
     transition: .5s;
+    padding: 15px;
 }
 
 
 .navigation .btnLogin-popup:hover {
     background: white;
     color: #162938;
+}
+
+.texto {
+    margin-top: 18px;
 }

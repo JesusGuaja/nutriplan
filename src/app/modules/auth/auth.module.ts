@@ -11,6 +11,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [LoginComponent, RegisterComponent],
@@ -23,6 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     MatButtonModule,
     MatIconModule,
+    SharedModule
   ],
   exports: [
     MatSelectModule,
