@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { ContactanosComponent } from './contactanos/contactanos.component';
+import { FavoritosComponent } from './favoritos/favoritos.component';
 import { RecetasComponent } from './recetas/recetas.component';
 import { TerminosComponent } from './terminos/terminos.component';
 import { DesayunosComponent } from './recetas/desayunos/desayunos.component';
@@ -16,6 +17,7 @@ import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
+    FavoritosComponent,
     TerminosComponent,
     DesayunosComponent,
     AlmuerzosComponent,
@@ -31,8 +33,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports:[
     ContactanosComponent,
-    TerminosComponent,
-   
+    FavoritosComponent,
+    TerminosComponent
   ]
 })
 export class PagesModule { }
