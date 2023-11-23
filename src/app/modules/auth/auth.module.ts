@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [LoginComponent, RegisterComponent, UsuarioComponent],
@@ -24,6 +25,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
     FormsModule,
     MatButtonModule,
     MatIconModule,
+    SharedModule
   ],
   exports: [
     MatSelectModule,

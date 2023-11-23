@@ -20,7 +20,7 @@ export class LoginComponent {
     nombre: '',
     email: '',
     rol: '',
-    contrasena: '',
+    password: '',
   }
 
   constructor(
@@ -32,10 +32,10 @@ export class LoginComponent {
   async iniciar(){
     const credenciales = {
       email: this.usuarios.email,
-      contrasena: this.usuarios.contrasena
+      password: this.usuarios.password
     }
 
-    const res = await this.servicioAuth.iniciarSesion(credenciales.email, credenciales.contrasena)
+    const res = await this.servicioAuth.iniciarSesion(credenciales.email, credenciales.password)
     .then(res => {
       alert("Se ha logueado con exito");
 
