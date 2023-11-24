@@ -2,6 +2,15 @@
   background-color: #81BD41;
 }
 
+.titulocards {
+  font-size: 10000;
+  font-weight: 1000;
+  float: left;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
 .card{
   margin-top: 0;
   height: 350px;
@@ -30,7 +39,7 @@ font-weight: 400;
 }
 
 .wrapper {
-  padding-top: 150px;
+  padding-top: 110px;
 display: table;
 height: 100%;
 width: 100%;
