@@ -1,10 +1,15 @@
+.card-read-more {
+  background-color: #81BD41;
+}
+
 .card{
-  margin-top: 20px;
-  height: 400px;
+  margin-top: 0;
+  height: 350px;
+
 }
 
 .container {
-  margin-top: 120px;
+  margin-top: 0;
 }
 
 .card-img-top {
@@ -25,9 +30,11 @@ font-weight: 400;
 }
 
 .wrapper {
+  padding-top: 150px;
 display: table;
 height: 100%;
 width: 100%;
+margin-bottom: 80px;
 }
 
 .container-fostrap {
