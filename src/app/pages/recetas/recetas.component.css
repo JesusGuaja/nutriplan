@@ -3,13 +3,13 @@
 }
 
 .titulocards {
-  font-size: 10000;
-  font-weight: 1000;
+  font-size: 3rem;
+  font-weight: 3rem;
   float: left;
   padding-top: 2%;
   padding-bottom: 2%;
+  text-align: left;
 }
-
 
 .card{
   margin-top: 0;
