@@ -39,11 +39,11 @@ header {
 }
 
 .navigation a {
-   
-    font-size: 1.1em;
+    padding-top: 8px;
+    font-size: 15px;
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 550;
     margin-left: 60px;
 }
 
