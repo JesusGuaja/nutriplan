@@ -97,3 +97,47 @@ header {
 .texto {
     margin-top: 18px;
 }
+
+.abstract-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Color de fondo */
+    color: #333; /* Color del texto */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.menu-link {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.menu-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.menu-link:hover {
+    color: #ff9900; /* Cambia el color al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.menu-link:hover::before {
+    transform: scaleX(1); /* Anima la línea de abajo */
+}
