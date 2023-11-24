@@ -8,6 +8,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { AdminRoutingModule } from './admin-routing.module';
 import { TableComponent } from './components/table/table.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+
+
 
 
 @NgModule({
@@ -20,7 +23,8 @@ import { AdminComponent } from './pages/admin/admin.component';
     AdminRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule
   ],
   exports: [
     TableComponent,
