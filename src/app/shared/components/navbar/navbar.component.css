@@ -141,3 +141,19 @@ header {
 .menu-link:hover::before {
     transform: scaleX(1); /* Anima la línea de abajo */
 }
+
+.mi-boton {
+    background-color: #81BD41;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+    float: right;
+}
+
+/* Estilo al pasar el mouse sobre el botón */
+.mi-boton:hover {
+    background-color: rgb(32, 32, 32);
+}
