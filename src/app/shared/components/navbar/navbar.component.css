@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    
 }
 
 header {
@@ -105,7 +105,7 @@ header {
     color: #333; /* Color del texto */
     border: none;
     border-radius: 10px; /* Bordes redondeados */
-    font-size: 16px;
+    font-size: 1000px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
 }
@@ -113,7 +113,7 @@ header {
 .menu-link {
     display: inline-block;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1000px;
     text-decoration: none;
     color: #333;
     position: relative;

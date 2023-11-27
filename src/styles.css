@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://db.onlinewebfonts.com/c/800e985f75a5a56c2f7b4be502d286de?family=Burbank+Big+Condensed+Bold');
+*{
+  font-family: "Burbank Big Condensed Bold";
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
