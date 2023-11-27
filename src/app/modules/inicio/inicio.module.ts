@@ -12,6 +12,7 @@ import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CardsComponent } from './cards/cards.component';
+import { CrudService } from '../admin/services/crud.service';
 
 @NgModule({
 
@@ -19,7 +20,8 @@ import { CardsComponent } from './cards/cards.component';
   imports: [
     CommonModule,
     InicioRoutingModule,
-    SharedModule
+    SharedModule,
+    
   ],
   exports: [InicioComponent, CardsComponent],
 })
