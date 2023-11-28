@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 50px;
     
 }
 
@@ -19,7 +18,7 @@ header {
     position: fixed;
     margin-bottom: 10px;
     width: 100%;
-    padding: 20px 100px;
+    padding: 10px 40px;
     background-color: rgb(32, 32, 32);
     display: flex;
     justify-content: space-between;
@@ -40,12 +39,14 @@ header {
 
 .navigation a {
     padding-top: 8px;
-    font-size: 15px;
+    font-size: 35px;
     color: white;
     text-decoration: none;
     font-weight: 550;
     margin-left: 60px;
+    
 }
+ 
 
 .mat-button{
     font-size: 1.1em;

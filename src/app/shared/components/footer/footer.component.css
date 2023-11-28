@@ -1,7 +1,10 @@
+*{
+  font-family: "Burbank Big Condensed Bold";
+}
 
 body {
     display: inline-flex;
-    padding: 0px 290px 0px 289px;
+    padding: 0px 100px 0px 100px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -23,7 +26,7 @@ body {
 .nutri-plan-is-a-free-use-service-the-nutri-plan-service-is-owned-by-nutri-plan-inc-argentina-s-a-tucum-n-1-piso-4-c-1049-aaa-autonomous-city-of-buenos-aires-argentina-and-cuit-number-30-63984459-1 {
   color: #000000;
   text-align: center;
-  font: 500 8px "Baloo 2", sans-serif;
+  font: 500 8px "Burbank Big Condensed Bold";
   position: absolute;
   left: 504px;
   top: 410px;
@@ -66,13 +69,13 @@ body {
 .servicio {
   color: #000000;
   text-align: left;
-  font: 700 16px/26px "Baloo 2", sans-serif;
+  font: 700 16px/26px "Burbank Big Condensed Bold";
   position: relative;
 }
 .inicio-qui-nes-somos {
   color: var(--dark, #0a142f);
   text-align: left;
-  font: var(--typo-heading-06, 500 16px "Barlow", sans-serif);
+  font: var(--typo-heading-06, 500 16px "Burbank Big Condensed Bold");
   opacity: 0.699999988079071;
   position: relative;
   width: 151px;
@@ -90,13 +93,13 @@ body {
 .categor-as {
   color: #000000;
   text-align: left;
-  font: 700 16px/26px "Baloo 2", sans-serif;
+  font: 700 16px/26px "Burbank Big Condensed Bold";
   position: relative;
 }
 .inicio-qui-nes-somos2 {
   color: var(--dark, #0a142f);
   text-align: left;
-  font: var(--typo-heading-06, 500 16px "Barlow", sans-serif);
+  font: var(--typo-heading-06, 500 16px "Burbank Big Condensed Bold");
   opacity: 0.699999988079071;
   position: relative;
   width: 162px;
@@ -113,7 +116,7 @@ body {
 .legal {
   color: #000000;
   text-align: left;
-  font: 700 16px/26px "Baloo 2", sans-serif;
+  font: 700 16px/26px "Burbank Big Condensed Bold";
   position: relative;
 }
 .frame-10 {
@@ -130,7 +133,7 @@ body {
 .contacto {
   color: #000000;
   text-align: left;
-  font: 700 16px/26px "Baloo 2", sans-serif;
+  font: 700 16px/26px "Burbank Big Condensed Bold";
   position: relative;
 }
 .horario {
@@ -148,7 +151,7 @@ body {
 .inicio-qui-nes-somos3 {
   color: var(--dark, #0a142f);
   text-align: left;
-  font: var(--typo-heading-06, 500 16px "Barlow", sans-serif);
+  font: var(--typo-heading-06, 500 16px "Burbank Big Condensed Bold");
   opacity: 0.699999988079071;
   position: absolute;
   left: 34px;
@@ -170,7 +173,7 @@ body {
 .mail2 {
   color: var(--dark, #0a142f);
   text-align: left;
-  font: var(--typo-heading-06, 500 16px "Barlow", sans-serif);
+  font: var(--typo-heading-06, 500 16px "Burbank Big Condensed Bold");
   opacity: 0.699999988079071;
   position: absolute;
   left: 34px;
@@ -192,7 +195,7 @@ body {
 .inicio-qui-nes-somos4 {
   color: var(--dark, #0a142f);
   text-align: left;
-  font: var(--typo-heading-06, 500 16px "Barlow", sans-serif);
+  font: var(--typo-heading-06, 500 16px "Burbank Big Condensed Bold");
   opacity: 0.699999988079071;
   position: absolute;
   left: 34px;
@@ -270,7 +273,7 @@ body {
 ._2023-nutri-plan-inc-all-rights-reserved {
   color: #000000;
   text-align: left;
-  font: 500 11px "Baloo 2", sans-serif;
+  font: 500 11px "Burbank Big Condensed Bold";
   position: relative;
 }
 
