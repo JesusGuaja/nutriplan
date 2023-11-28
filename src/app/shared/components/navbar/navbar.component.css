@@ -38,7 +38,7 @@ header {
 }
 
 .navigation a {
-    padding-top: 8px;
+    padding-top: 1rem;
     font-size: 35px;
     color: white;
     text-decoration: none;
@@ -146,7 +146,7 @@ header {
 .mi-boton {
     background-color: #81BD41;
     color: #000000;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 2px;
     cursor: pointer;
