@@ -6,6 +6,7 @@ import { Observable, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { Usuario } from 'src/app/models/usuario';
 import { FirestoreService } from 'src/app/shared/services/firestore.service';
+import { BehaviorSubject } from 'rxjs';
 
 
 @Injectable({
@@ -31,6 +32,12 @@ export class AuthService {
         }
       })
     );
+  }
+
+  private _isAuthenticated = new BehaviorSubject<boolean>(false);
+
+  get isAuthenticated() {
+    return this._isAuthenticated.asObservable();
   }
 
   // FUNCIÓN PARA REGISTER
