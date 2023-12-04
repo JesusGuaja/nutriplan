@@ -4,21 +4,14 @@
             <div class="container">
                 <div class="row">
                     <!-- Aquí se itera sobre las recetas de desayuno y se crean las tarjetas. -->
-                    <div *ngFor="let receta of recetasDesayuno$ | async" class="col-xs-12 col-md-4">
+                    <div *ngFor="let receta of recetasDesayuno$ | async" class="col columnas">
                         <div class="card" style="width: 18rem;">
-                            <img [src]="receta.imagen" class="card-img-top" [alt]="receta.alt" />
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="">{{ receta.nombre }}</a>
-                                </h4>
-                                <p class="card-text">{{ receta.descripcion }}</p>
+                            <img [src]="receta.imagen" style="width: 18rem; height: 12rem;" class="card-img-top" alt="imagen receta">
+                            <div class="card-body">
+                              <h5 class="card-title">{{receta.nombre}}</h5>
+                              <a href="#" class="btn btn-secondary card-read-more">Ver Receta</a>
                             </div>
-                            <div class="card-read-more">
-                                <a href="" class="btn btn-link btn-block">
-                                    VER RECETA
-                                </a>
-                            </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
