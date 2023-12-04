@@ -10,27 +10,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  
   hide = true;
-
   usuarios: Usuario = {
     uid: '',
     nombre: '',
     email: '',
-    rol: '',
+    rol: 'usuario',
     password: ''
   }
-
   uid = '';
-
   coleccionUsuarios: Usuario[] = [];
-
   constructor(
     public servicioAuth: AuthService, 
     public servicioFirestore: FirestoreService,
     public router: Router
   ) { }
-
+  async ngOnInit(){
+    const uid = await this.servicioAuth.getuid();
+    console.log(uid);
+  }
   async registrarse() {
     const credenciales = {
       email: this.usuarios.email,
@@ -46,18 +44,14 @@ export class RegisterComponent {
         alert('Hubo un error al cargar el usuario :( \n' + error)
         
       );
-
     //UID
     const uid = await this.servicioAuth.getuid(); // obteniendo uid
-
     this.usuarios.uid = uid; //Guardando el uid
-
     //Mostrando resultados
     console.log(res);
     //Guardar Usuario
     this.guardarUser();
   }
-
   async guardarUser(){
     this.servicioFirestore.agregarUsuario(this.usuarios, this.usuarios.uid)
     .then(res => {
@@ -66,11 +60,6 @@ export class RegisterComponent {
     .catch(error =>{
       console.log('Error =>', error)
     })
-  }
-
-  async ngOnInit(){
-    const uid = await this.servicioAuth.getuid();
-    console.log(uid);
   }
 }
 
