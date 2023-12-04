@@ -14,7 +14,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AuthService {
   usuario$: Observable<Usuario | null>;
-
+  private _isAuthenticated = new BehaviorSubject<boolean>(false);
   constructor(
     private afAuth: AngularFireAuth,
     private router: Router,
@@ -32,25 +32,19 @@ export class AuthService {
         }
       })
     );
+
+    const token = localStorage.getItem('token');
+    this._isAuthenticated.next(!!token); // Actualizar el estado basado en la presencia del token
   }
-
-  private _isAuthenticated = new BehaviorSubject<boolean>(false);
-
-  get isAuthenticated() {
-    return this._isAuthenticated.asObservable();
-  }
-
   // FUNCIÓN PARA REGISTER
   registrar(email: string, password: string) {
     // retorna nuevo valor de nombre y contrasena
     return this.afAuth.createUserWithEmailAndPassword(email, password);
   }
-
   //Recolectar UID del usuario
   async getuid() {
     //Genera una Promesa, y const user para la captura
     const user = await this.afAuth.currentUser;
-
     //Condicion para devolver nulo, o el uid si es que lo tiene
     if (user == null) {
       return null;
@@ -59,7 +53,6 @@ export class AuthService {
       return user.uid;
     }
   }
-
   // Método para iniciar sesión y obtener el token
   iniciarSesion(email: string, contrasena: string) {
     return this.afAuth.signInWithEmailAndPassword(email, contrasena)
@@ -70,15 +63,18 @@ export class AuthService {
             localStorage.setItem('token', token);
             // Puedes establecer una fecha de expiración para el token si lo deseas
             // localStorage.setItem('expira', (new Date().getTime() + (result.user.stsTokenManager.expirationTime)).toString());
+            this._isAuthenticated.next(true); // Actualizar el estado a autenticado
           });
         } else {
           // Si result.user es null, maneja el caso como consideres necesario
-          // Por ejemplo, podrías lanzar un error o redirigir al usuario a la página de inicio de sesión
           throw new Error('No se pudo obtener la información del usuario.');
         }
+      }).catch(error => {
+        console.error('Error al iniciar sesión: ', error);
+        this._isAuthenticated.next(false); // Asegurarse de que el estado es no autenticado si hay un error
+        throw error;
       });
   }
-
   // Método para cerrar sesión y eliminar el token
   cerrarSesion() {
     return this.afAuth.signOut().then(() => {
@@ -86,13 +82,21 @@ export class AuthService {
       localStorage.removeItem('token');
       // Si has establecido una fecha de expiración, también deberías eliminarla
       // localStorage.removeItem('expira');
+      this._isAuthenticated.next(false); // Actualizar el estado a no autenticado
+    }).catch(error => {
+      console.error('Error al cerrar sesión: ', error);
+      throw error;
     });
   }
-
   // Método para verificar si el token existe y es válido
   estaLogueado(): boolean {
     const token = localStorage.getItem('token');
     // Aquí podrías agregar una verificación adicional para el token, como su fecha de expiración
     return token != null;
   }
+  get isAuthenticated() {
+    return this._isAuthenticated.asObservable();
+  }
+
+
 }

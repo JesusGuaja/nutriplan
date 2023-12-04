@@ -8,7 +8,16 @@ import { AuthService } from 'src/app/modules/auth/services/auth.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(private auth : AuthService, public router : Router){}
+
+  estaAutenticado: boolean = false;
+
+  constructor(private auth : AuthService, public router : Router){
+    this.auth.isAuthenticated.subscribe(estado => {
+      this.estaAutenticado = estado;
+    })
+  }
+
+
   cerrar(){
     this.auth.cerrarSesion();
     this.router.navigate(['/inicio'])

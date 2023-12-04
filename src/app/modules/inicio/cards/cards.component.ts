@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent {
+open() {
+throw new Error('Method not implemented.');
+}
   iconoSinMarcar = true;
   
   mostrarIconoMarcado=false
@@ -14,5 +17,5 @@ export class CardsComponent {
     this.mostrarIconoMarcado = !this.iconoSinMarcar
   }
 
-
+  
 }
