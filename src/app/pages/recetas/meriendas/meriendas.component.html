@@ -1,17 +1,25 @@
+
 <section class="wrapper">
     <div class="container-fostrap">
         <div class="content">
             <div class="container">
                 <div class="row">
-                    <!-- Aquí se itera sobre las recetas de desayuno y se crean las tarjetas. -->
-                    <div *ngFor="let receta of recetasMerienda$ | async" class="col columnas">
-                        <div class="card" style="width: 18rem;">
-                            <img [src]="receta.imagen" style="width: 18rem; height: 12rem;" class="card-img-top" alt="imagen receta">
-                            <div class="card-body">
-                              <h5 class="card-title">{{receta.nombre}}</h5>
-                              <a href="#" class="btn btn-secondary card-read-more">Ver Receta</a>
+                    <div class="col-xs-12 col-md-4" *ngFor="let receta of recetasMerienda$ | async" class="col columnas">
+                        <div class="card">
+                            <a class="img-card" href="">
+                            <img [src]="receta.imagen"/>
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    {{receta.nombre}}
+                                </h4>
                             </div>
-                          </div>
+                            <div class="card-read-more">
+                                <a href="" class="btn btn-link btn-block">
+                                    VER RECETA
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

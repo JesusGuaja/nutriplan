@@ -1,21 +1,28 @@
-<header>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="logo"><img src="./assets/logo-nutriplan2.png" alt="" id="logo1"></h2>
-        </div>
-        <div class="col-11 texto">
-          <nav class="navigation">
-            <a href="/inicio" id="inicio" class="menu-link">INICIO</a>
-
-            <a href="/recetas" id="recetas" class="menu-link">RECETAS</a>
-            <a routerLink="/contacto" href="" id="nosotros" class="menu-link">NOSOTROS</a>
-            <a routerLink="/contactanos" href="" id="contactanos" class="menu-link">CONTACTO</a>
-            <a *ngIf="!estaAutenticado" class="mi-boton" routerLink="/login">INICIAR SESIÓN</a>
-            <a *ngIf="estaAutenticado" class="mi-boton" (click)="cerrar()">CERRAR SESIÓN</a>
-          </nav>                                                                             
-        </div>
-
-      </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="logo"><img src="../../../../assets/logo-nutriplan.png" style="width: 70px; height: 70px;" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/inicio">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/recetas">RECETAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contacto">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin">ADMIN</a>
+        </li>
+        <li class="nav-items nav-link botonesdeloguin">
+          <a *ngIf="!estaAutenticado" class="mi-boton" routerLink="/login">INICIAR SESION</a>
+          <a *ngIf="estaAutenticado" class="mi-boton" (click)="cerrar()">CERRAR SESION</a>
+        </li>
+      </ul>
     </div>
-</header>
+  </div>
+</nav>

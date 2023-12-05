@@ -10,6 +10,7 @@ import { AuthService } from 'src/app/modules/auth/services/auth.service';
 export class NavbarComponent {
 
   estaAutenticado: boolean = false;
+  isMenuOpen = false;
 
   constructor(private auth : AuthService, public router : Router){
     this.auth.isAuthenticated.subscribe(estado => {
@@ -22,5 +23,11 @@ export class NavbarComponent {
     this.auth.cerrarSesion();
     this.router.navigate(['/inicio'])
   }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  
 
 }
