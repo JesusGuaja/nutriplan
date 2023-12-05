@@ -50,7 +50,6 @@ export class LoginComponent {
   async salir(){
     const res = await this.servicioAuth.cerrarSesion()
     .then(res => {
-      alert("Ha cerrado sesion con exito");
       console.log(res);
 
       this.router.navigate(['/inicio']);
