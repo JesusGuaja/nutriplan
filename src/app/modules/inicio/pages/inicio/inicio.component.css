@@ -1,52 +1,74 @@
-@import url('https://db.onlinewebfonts.com/c/800e985f75a5a56c2f7b4be502d286de?family=Burbank+Big+Condensed+Bold');
-*{
-  font-family: "Burbank Big Condensed Bold";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.container{
-    height: 50;
-    width: 50px;    
-}
-.carousel-item{
-    height: 400px;
-    
-} 
-
-.carrusel { 
-    margin-top: 0;
-    margin-bottom: 15%;
-    margin-left: 0%;
-    margin-right: 0%;
-    border-radius: 50px;
+.carousel-item {
+  height: 400px;
 }
 
 .carrusel {
-  padding-top: 0;
+  margin: 0;
+  border-radius: 50px;
 }
 
 .button_Horarios {
-    background-color: #77AF3C;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px auto;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    margin: 50px;
+  background-color: #77AF3C;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px auto;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  margin: 50px;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones se ajusten al ancho del contenedor */
+  justify-content: center; /* Centra los botones horizontalmente */
+  align-items: center; /* Centra los botones verticalmente */
+  gap: 20px; /* Espacio entre botones */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 200px;
   }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .button_Horarios {
+    font-size: 12px;
+    padding: 0.3rem 0.6rem;
+    margin: 20px;
   }
 
   .botones {
-    display: flex; 
-    margin-bottom: 100%;
-    margin-top: -700%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    height: 150px;
   }
 
+  .button_Horarios img {
+    width: 80px;
+    height: 80px;
+  }
 
+  .button_Horarios {
+    font-size: 10px;
+    padding: 0.2rem 0.4rem;
+    margin: 10px;
+  }
+
+  .texto {
+    font-size: 18px;
+  }
+}

@@ -1,7 +1,4 @@
-@import url('https://db.onlinewebfonts.com/c/800e985f75a5a56c2f7b4be502d286de?family=Burbank+Big+Condensed+Bold');
-*{
-  font-family: "Burbank Big Condensed Bold";
-}
+
 .card-read-more {
     background-color: #81BD41;
 }
@@ -20,7 +17,6 @@
     height: 250px;
   }
   
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
   
   html,
   body {
@@ -29,7 +25,6 @@
   height: 100%;
   width: 100%; 
   background: #FFF;
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   }
   
@@ -38,6 +33,7 @@
   height: 100%;
   width: 100%;
   margin-bottom: 80px;
+  padding-bottom: 0;
   }
   
   .container-fostrap {
