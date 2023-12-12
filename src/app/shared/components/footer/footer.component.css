@@ -1,9 +1,12 @@
+.container {
+  background-color: #81BD41;
+}
+
 body {
   background: #ff5f6d;
   background: -webkit-linear-gradient(to right, #00001a, #00004d);
   background: linear-gradient(to right, #00001a, #00004d);
   min-height: 100vh;
-
 }
 
 #button-addon1 {
@@ -11,7 +14,7 @@ body {
 }
 
 i {
-  color: #0000cc;
+  color: #000000;
   font-size: 20px;}
 
 .form-control::placeholder {
