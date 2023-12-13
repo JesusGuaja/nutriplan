@@ -4,7 +4,6 @@
 }
 
 .card{
-  margin-top: 0;
   height: 350px;
 
 }
@@ -121,4 +120,69 @@ text-transform: uppercase
 
 .btn {
   color: black;
+}
+
+/* Estilos generales para la página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Estilos para el modal */
+.modal-content {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 20px;
+  background-color: #222121;
+  color: #ffffff;
+}
+
+.modal-title {
+  font-weight: none;
+}
+
+.modal-body {
+  padding: 20px;
+  color: #333;
+}
+
+.modal-footer {
+  border-top: none;
+  padding: 20px;
+  background-color: #81BD41;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+.btn-secondary {
+  background-color: #222121;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #222121;
+}
+
+/* Estilos para el botón que dispara el modal */
+.btn-link {
+  text-decoration: none;
+  background-color: #81BD41;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
