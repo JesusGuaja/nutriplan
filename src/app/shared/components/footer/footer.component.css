@@ -1,6 +1,14 @@
-.footer {
+
+footer {
   width: 100%;
+}
+
+.container-fluid {
   background-color: #81BD41;
+}
+
+.texto34 {
+  margin-left: 4rem;
 }
 
 body {
