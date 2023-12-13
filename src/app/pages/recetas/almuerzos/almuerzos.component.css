@@ -186,3 +186,52 @@ body {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+
+.modal-body {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Estilo para los títulos dentro de la descripción */
+.modal-body h2 {
+  color: #81BD41;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+/* Estilo para las listas dentro de la descripción */
+.modal-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-body ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Estilo para las etiquetas <strong> para resaltar texto */
+.modal-body strong {
+  color: #555;
+  font-weight: bold;
+}
+
+/* Estilo para los párrafos dentro de la descripción */
+.modal-body p {
+  margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces dentro de la descripción */
+.modal-body a {
+  color: #81BD41;
+  text-decoration: none;
+}
+
+.modal-body a:hover {
+  text-decoration: underline;
+}
