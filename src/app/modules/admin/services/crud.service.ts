@@ -1,57 +1,68 @@
+// Importaciones necesarias para el servicio
 import { Injectable } from '@angular/core';
 import { Receta } from 'src/app/models/receta';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { map } from 'rxjs/operators';
 import { async } from 'rxjs';
 
+// Decorador que define el servicio y su ámbito de provisión
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' // El servicio está disponible en toda la aplicación
 })
 export class CrudService {
-
-  private recetasColeccion: AngularFirestoreCollection<Receta>
+  // Colección privada de recetas en Firestore
+  private recetasColeccion: AngularFirestoreCollection<Receta>;
   
+  // Constructor del servicio, inyectamos AngularFirestore
   constructor(private database: AngularFirestore) { 
-    this.recetasColeccion = database.collection('receta')
+    // Inicializamos la colección de recetas
+    this.recetasColeccion = database.collection('receta');
   }
 
-  //funcion para crear la receta
+  // Método para crear una nueva receta en Firestore
   crearReceta(receta: Receta){
+    // Retornamos una nueva promesa
     return new Promise(async(resolve, reject) =>{
       try{
+        // Creamos un nuevo ID para la receta
         const id = this.database.createId();
+        // Asignamos el ID a la receta
         receta.idProducto = id;
-
+        // Guardamos la receta en Firestore y resolvemos la promesa con el resultado
         const resultado = await this.recetasColeccion.doc(id).set(receta);
-
         resolve(resultado);
-
       }catch (error){
-        reject(error)
+        // En caso de error, rechazamos la promesa con el error
+        reject(error);
       }
-    })
+    });
   }
 
+  // Método para obtener todas las recetas de Firestore
   obtenerReceta(){
-    return this.recetasColeccion.snapshotChanges().pipe(map(action => action.map(a => a.payload.doc.data())))
+    // Retornamos el observable de los cambios en la colección
+    return this.recetasColeccion.snapshotChanges().pipe(map(action => action.map(a => a.payload.doc.data())));
   }
 
-  //funcion para editar la receta
+  // Método para editar una receta existente en Firestore
   modificarReceta(idProducto: string, nuevaData: Receta){
-    return this.database.collection('receta').doc(idProducto).update(nuevaData)
+    // Actualizamos la receta con el ID y los nuevos datos proporcionados
+    return this.database.collection('receta').doc(idProducto).update(nuevaData);
   }
 
-  //funcion para eliminar la receta
+  // Método para eliminar una receta de Firestore
   eliminarReceta(idProducto: string){
+    // Retornamos una nueva promesa
     return new Promise((resolve, reject) => {
       try{
-        const resp = this.recetasColeccion.doc(idProducto).delete()
-        resolve(resp)
+        // Eliminamos la receta con el ID proporcionado y resolvemos la promesa
+        const resp = this.recetasColeccion.doc(idProducto).delete();
+        resolve(resp);
       }
       catch(error){
-        reject(error)
+        // En caso de error, rechazamos la promesa con el error
+        reject(error);
       }
-    })
+    });
   }
-
 }

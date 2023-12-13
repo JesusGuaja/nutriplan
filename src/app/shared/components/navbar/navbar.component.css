@@ -3,158 +3,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0; 
-    width: 100%;
-    z-index: 999;
-}
-
-header {
-    position: fixed;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 10px 40px;
-    background-color: rgb(32, 32, 32);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-    background-color: rgb(32, 32, 32);
-}
-
-.logo {
-    font-size: 2em;
+.nav-item a{
     color: white;
-    user-select: none;
 }
-
-#logo1 {
-    width: 85px;
-}
-
-.navigation a {
-    padding-top: 1rem;
-    font-size: 35px;
-    color: white;
-    text-decoration: none;
-    font-weight: 550;
-    margin-left: 60px;
-    
-}
- 
-
-.mat-button{
-    font-size: 1.1em;
-    color: white;
-    text-decoration: none;
+.nav-item{
+    font-size: 0.9rem;
     font-weight: 500;
-    margin-left: 60px;
 }
 
-/*.navigation a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    height: 3px;
-    background: white;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-
-.navigation a:hover::after {
-    transform: scaleX(1);
-}*/
-
-.navigation .btnLogin-popup {
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid white;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: white;
-    font-weight: 500;
-    margin-left: 330px;
-    transition: .5s;
-    padding: 15px;
-}
-
-
-.navigation .btnLogin-popup:hover {
-    background: white;
-    color: #162938;
-}
-
-.texto {
-    margin-top: 18px;
-}
-
-.abstract-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffcc00; /* Color de fondo */
-    color: #333; /* Color del texto */
-    border: none;
-    border-radius: 10px; /* Bordes redondeados */
-    font-size: 1000px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
-}
-
-.menu-link {
-    display: inline-block;
-    padding: 10px;
-    font-size: 1000px;
-    text-decoration: none;
-    color: #333;
-    position: relative;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.menu-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.navbar{
     width: 100%;
-    height: 2px;
-    background-color: #333;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.2s ease;
+}
+.container-fluid{
+    background-color: #222121;
+    padding: 1rem;
+    width: 100%;
 }
 
-.menu-link:hover {
-    color: #ff9900; /* Cambia el color al pasar el ratón */
-    transform: translateY(-2px); /* Efecto de elevación */
+.container-fluid a {
+    margin-right: 1rem;
 }
 
-.menu-link:hover::before {
-    transform: scaleX(1); /* Anima la línea de abajo */
-}
 
 .mi-boton {
-    background-color: #81BD41;
-    color: #000000;
-    padding: 10px;
+    display: block;
+    color: #ffffff;
     border: none;
-    border-radius: 2px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
-    float: right;
+    transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
-
 /* Estilo al pasar el mouse sobre el botón */
 .mi-boton:hover {
-    background-color: rgb(32, 32, 32);
+    color: #77af3c;
 }
+
+#logo {
+    padding-left: 1em;
+}
+
+.nav-link {
+    margin: 1rem;
+}
+
+
+
+  
+  
+  
+  

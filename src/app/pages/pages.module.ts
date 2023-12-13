@@ -21,7 +21,8 @@ import { SharedModule } from '../shared/shared.module';
     AlmuerzosComponent,
     MeriendasComponent,
     CenasComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    RecetasComponent,
   ],
   imports: [
     CommonModule,
@@ -31,7 +32,10 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports:[
     ContactanosComponent,
-    TerminosComponent
+    TerminosComponent,
+    DesayunosComponent,
+    AlmuerzosComponent,
+    MeriendasComponent
   ]
 })
 export class PagesModule { }

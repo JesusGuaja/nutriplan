@@ -8,16 +8,11 @@ import { SharedModule } from './shared/shared.module';
 
 const routes: Routes = [
 
-
-  { path:"",component:InicioComponent },
-  { path:"",loadChildren:()=>import('./modules/inicio/inicio.module').then(m=>m.InicioModule)},
-  { path:"",loadChildren:()=>import('./pages/pages.module').then(m=>m.PagesModule)},
-  { path: "",loadChildren:()=>import('./modules/auth/auth.module').then(m=>m.AuthModule)},
-  { path: "",loadChildren:()=>import('./shared/shared.module').then(m=>m.SharedModule)},
-
-
-
-  
+  { path: "", component: InicioComponent },
+  { path: "", loadChildren: () => import('./modules/inicio/inicio.module').then(m => m.InicioModule) },
+  { path: "", loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
+  { path: "", loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule) },
+  { path: "", loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule) },
 
 ];
 

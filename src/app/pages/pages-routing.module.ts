@@ -8,16 +8,17 @@ import { MeriendasComponent } from './recetas/meriendas/meriendas.component';
 import { CenasComponent } from './recetas/cenas/cenas.component';
 
 import { ContactanosComponent } from './contactanos/contactanos.component';
+import { AuthGuard } from '../modules/auth/services/auth.guard';
 
 // Enlazamos todas las rutas de las vistas de pages
 const routes: Routes = [
   {path:"contacto",component:ContactanosComponent},
-  {path:"recetas",component:RecetasComponent},
+  {path:"recetas",component:RecetasComponent, canActivate: [AuthGuard] },
   {path:"terminos",component:TerminosComponent},
-  {path:"desayunos",component:DesayunosComponent},
-  {path:"almuerzos",component:AlmuerzosComponent},
-  {path:"meriendas",component:MeriendasComponent},
-  {path:"cenas",component:CenasComponent},
+  {path:"desayunos",component:DesayunosComponent, canActivate: [AuthGuard]},
+  {path:"almuerzos",component:AlmuerzosComponent, canActivate: [AuthGuard]},
+  {path:"meriendas",component:MeriendasComponent, canActivate: [AuthGuard]},
+  {path:"cenas",component:CenasComponent, canActivate: [AuthGuard]},
   
 ];
 

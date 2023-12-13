@@ -1,3 +1,7 @@
+h1 {
+  font-weight: 550;
+}
+
 .card-read-more {
   background-color: #81BD41;
 }
@@ -9,7 +13,6 @@
   padding-top: 2%;
   padding-bottom: 2%;
   text-align: left;
-  font-family: "Burbank Big Condensed Bold";
 }
 
 .card{
